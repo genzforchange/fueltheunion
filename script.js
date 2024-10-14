@@ -137,6 +137,20 @@ ${closing},
     ","
   )}?subject=${encodedSubject}&body=${encodedBody}`;
   window.location.href = emailLink;
+
+   fetch("https://tracking.fueltheunion.com/")
+  .then((response) => {
+    // Log the content type    
+    // If the response is JSON, parse it
+    if (response.headers.get("content-type").includes("application/json")) {
+      return "Email sent!";
+    } else {
+      // Otherwise, return the response as text to see what's coming back
+      return "Email sent!";
+    }
+  })
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
 }
 document
   .getElementById("sendEmailButton")
