@@ -140,7 +140,7 @@ ${closing},
 
 
 
-  fetch("https://tracking.fueltheunion.com/", {"method": "POST"})
+  fetch("https://tracking.fueltheunion.com/", {"method": "POST", body: JSON.stringify({"auth": "count"})})
   .then((response) => {
     // Log the content type    
     // If the response is JSON, parse it
