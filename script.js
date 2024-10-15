@@ -138,7 +138,9 @@ ${closing},
   )}?subject=${encodedSubject}&body=${encodedBody}`;
   window.location.href = emailLink;
 
-   fetch("https://tracking.fueltheunion.com/")
+
+
+  fetch("https://tracking.fueltheunion.com/", {"method": "POST", body: JSON.stringify({"auth": "count"})})
   .then((response) => {
     // Log the content type    
     // If the response is JSON, parse it
@@ -151,6 +153,7 @@ ${closing},
   })
   .then((data) => console.log(data))
   .catch((error) => console.error(error));
+
 }
 document
   .getElementById("sendEmailButton")
