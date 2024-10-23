@@ -11,6 +11,7 @@ const emailAddresses = [
   "councilmemberdurhal@detroitmi.gov",
   "councilmemberwaters@detroitmi.gov",
   "coleman.young@detroitmi.gov",
+  "publicinfo@nlrb.gov"
 ];
 
 // Subject lines
