@@ -205,6 +205,13 @@ strong{
 
 }
 
+#update{
+  margin: 30px;
+  padding: 30px;
+  border: 1.5px solid #f7484d;
+
+}
+
 footer{
   background-color: var(--white);
   display: flex;
